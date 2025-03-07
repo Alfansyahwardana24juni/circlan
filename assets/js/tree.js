@@ -1,3 +1,8 @@
+FamilyTree.templates.tommy_male.field_2 =
+  '<text class="field_2" style="font-size: 14px;" fill="#ffffff" x="33" y="42" text-anchor="middle">{val}</text>';
+FamilyTree.templates.tommy_female.field_2 =
+  '<text class="field_2" style="font-size: 14px;" fill="#ffffff" x="33" y="42" text-anchor="middle">{val}</text>';
+
 var family = new FamilyTree(document.getElementById("tree"), {
   showXScroll: FamilyTree.scroll.visible,
   showYScroll: FamilyTree.scroll.visible,
@@ -6,6 +11,7 @@ var family = new FamilyTree(document.getElementById("tree"), {
   nodeBinding: {
     field_0: "name",
     field_1: "birthDate",
+    field_2: "status",
     img_0: "photo",
   },
 });
@@ -21,6 +27,7 @@ family.load([
     birthDate: "10 Maret 1950",
     photo:
       "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    status: "Jakarta",
   },
   {
     id: 1,
@@ -32,6 +39,7 @@ family.load([
     birthDate: "12 Desember 1951",
     photo:
       "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    status: "Malang",
   },
   {
     id: 2,
@@ -43,6 +51,7 @@ family.load([
     birthDate: "10 Maret 1950",
     photo:
       "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    status: "Makassar",
   },
   {
     id: 3,
@@ -120,6 +129,7 @@ family.load([
     birthDate: "10 Maret 1950",
     photo:
       "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    status: "Saya",
   },
   {
     id: 14,
