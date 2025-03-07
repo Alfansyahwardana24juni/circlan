@@ -11248,13 +11248,11 @@ section {
   position: fixed;
   top: 0;
   z-index: 999;
+  left: 0;
   background-color: var(--primary-light);
   backdrop-filter: blur(10px);
   transition: all 0.5s;
-  left: 50%; /* Pusatkan secara horizontal */ 
-  transform: translateX(-50%); /* Geser ke kiri sebanyak 50% dari lebarnya sendiri */ 
-  width: 550px; /* Atur lebar menjadi 550px */
- }
+  width: 100%; }
 
 .sticky-header {
   position: fixed;
@@ -11360,29 +11358,30 @@ section {
       .header.transparent .right-content .theme-btn.active .dark,
       .header.transparent .right-content .theme-color.active .dark {
         display: none; }
-  .header .back-btn {
-    display: flex;
-    line-height: 1;
-    font-size: 20px;
-    width: 35px;
-    height: 35px;
-    min-width: 35px;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-    color: #2f2f2f; }
-  .header .menu-toggler {
-    font-size: 20px;
-    color: var(--title);
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .header .menu-toggler i {
-      line-height: 1; }
-  .header .container {
-    padding-top: 0;
-    padding-bottom: 0; }
-  .header .main-bar {
+        .header .back-btn {
+          display: flex;
+          line-height: 1;
+          font-size: 20px;
+          width: 35px;
+          height: 35px;
+          min-width: 35px;
+          align-items: center;
+          justify-content: center;
+          margin-right: 15px;
+          color: #2f2f2f; }
+        .header .menu-toggler {
+          font-size: 20px;
+          color: var(--title);
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .header .menu-toggler i {
+            line-height: 1; }
+        .header .container {
+          padding-top: 0;
+          padding-bottom: 0; }
+  /* p */
+ .header .main-bar {
     display: flex;
     height: 100%;
     min-height: var(--headheight);
@@ -11717,14 +11716,13 @@ section {
   .menubar-area {
     position: fixed;
     bottom: 0;
-    left: 50%; /* Pusatkan secara horizontal */
-    transform: translateX(-50%); /* Geser ke kiri sebanyak 50% dari lebarnya sendiri */
-    width: 550px; /* Atur lebar menjadi 550px */
+    left: 0;
+    width: 100%; 
     background-color: var(--bg-white);
     padding: 15px 0;
     z-index: 999;
     box-shadow: 0px -11px 19px 0px rgba(0, 0, 0, 0.08);
-    border-radius: 18px 18px 0px 0;
+    border-radius: 18px 18px 0px 0; 
   }
   
   .menubar-area .toolbar-inner {
@@ -14172,14 +14170,20 @@ button {
   border-bottom: 1px solid var(--border-color); }
   .dz-list > ul > li .dz-media {
     margin-right: 15px;
-    min-width: 15px; }
+    min-width: 15px; 
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
   .dz-list > ul > li .dz-icon {
     height: 20px;
     width: 20px; }
     .dz-list > ul > li .dz-icon svg {
       width: 20px;
       height: 20px;
-      transform: scale(1.2); }
+      transform: scale(1.2);
+      position: relative;
+       }
     .dz-list > ul > li .dz-icon.icon-sm svg {
       width: 16px;
       height: 16px;
@@ -15695,11 +15699,12 @@ button {
     margin-bottom: 0; }
   .post-card:first-child {
     margin-top: 0; }
-  .post-card .meta-list li {
+  .post-card .meta-list li, .post-meta-btn ul li a {
     display: inline-block;
     position: relative;
     margin-right: 20px;
-    font-size: 12px; }
+    font-size: 12px; 
+  }
     .post-card .meta-list li:after {
       content: "";
       height: 3px;
@@ -15708,7 +15713,7 @@ button {
       background-color: #C4C4C4;
       position: absolute;
       right: -14px;
-      top: 50%;
+      top: 50%; 
       transform: translateY(-50%); }
     .post-card .meta-list li svg path {
       stroke: #000; }
@@ -15722,7 +15727,9 @@ button {
     justify-content: space-between;
     margin-bottom: 15px; }
   .post-card .dz-media {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+  
+  }
     .post-card .dz-media img {
       width: 100%;
       border-radius: var(--border-radius-base);
@@ -15744,12 +15751,33 @@ button {
         .post-card .dz-media .media-image .video-btn svg path {
           stroke: var(--primary); }
   .post-card .post-meta-btn {
-    margin-top: 15px; }
+    margin-top: 15px;
+   }
     .post-card .post-meta-btn ul {
       display: flex;
-      align-items: center; }
+      align-items: center; /* Item sejajar vertikal di tengah */
+      margin: 0; /* Menghapus margin default */
+      padding: 0; /* Menghapus padding default */
+      list-style: none; /* Menghapus bullet points pada list */
+  }
+  
+  /* Responsif: Mengubah tata letak saat layar kecil */
+  @media (max-width: 482px) {
+      .post-card .post-meta-btn ul {
+          flex-direction: column; /* Tata letak vertikal */
+          align-items: flex-start; /* Item sejajar ke kiri */
+      }
+  }
     .post-card .post-meta-btn li {
-      margin-right: 10px; }
+      /* margin-right: 10px; */
+      position: relative;
+      display:flex;
+      
+    }
+    /* .post-card .post-meta-btn image {
+      padding: left;
+      
+    } */
     .post-card .post-meta-btn .action-btn {
       display: flex;
       align-items: center;
@@ -17290,9 +17318,9 @@ ul.list-check {
   text-align: center;
   margin: 25px auto;
   width: 100px;
-  height: 70px; }
+  height: 100px; }
   .social-box span {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: block; }
   .social-box img {
     width: 36px;
@@ -17359,7 +17387,7 @@ ul.list-check {
       font-weight: 500;
       margin-top: 15px; }
   .welcome-area .join-area {
-    padding: 15px 15px;
+    padding: 20px 50px;
     background-color: var(--bg-white);
     margin: 90px -15px -15px -15px;
     position: relative; }
