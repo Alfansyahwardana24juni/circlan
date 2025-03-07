@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta -->
+	
+	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
 	<meta name="theme-color" content="#2196f3">
@@ -28,11 +29,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body >
-    <div id="tree"></div>
+	
+</head>    
+<body class="bg-white">
+<div class="page-wraper header-fixed">
     
-    <!-- Menu bar -->
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Preloader end-->
+    
+
+
+	<!-- Menu bar -->
 	<div class="menubar-area">
 		<div class="toolbar-inner menubar-nav">
 			<a href="index.html" class="nav-link ">
@@ -69,11 +79,15 @@
 		</div>
 	</div>
 	<!--End Menu bar  -->
-</body>
-<script src="assets/js/familytree.js"></script>
-<script src="assets/js/tree.js"></script>
+</div> 
+
+<!--**********************************
+    Scripts
+***********************************-->
 <script src="assets/js/jquery.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/settings.js"></script>
 <script src="assets/js/custom.js"></script>
+<script src="assets/js/tree.js"></script>
+<script src="assets/js/familytree.js"></script>
 </html>
