@@ -1,12 +1,17 @@
-FamilyTree.templates.tommy_male.field_2 =
-  '<text class="field_2" style="font-size: 14px;" fill="#ffffff" x="33" y="42" text-anchor="middle">{val}</text>';
-FamilyTree.templates.tommy_female.field_2 =
-  '<text class="field_2" style="font-size: 14px;" fill="#ffffff" x="33" y="42" text-anchor="middle">{val}</text>';
+// FamilyTree.templates.tommy_male.field_2 =
+//   '<text class="field_2" style="font-size: 14px;" fill="#ffffff" x="33" y="42" text-anchor="middle">{val}</text>';
+// FamilyTree.templates.tommy_female.field_2 =
+//   '<text class="field_2" style="font-size: 14px;" fill="#ffffff" x="33" y="42" text-anchor="middle">{val}</text>';
 
 var family = new FamilyTree(document.getElementById("tree"), {
   showXScroll: FamilyTree.scroll.visible,
   showYScroll: FamilyTree.scroll.visible,
   mouseScrool: FamilyTree.action.zoom,
+  toolbar: {
+    zoom: true,
+    fit: true,
+  },
+  nodeTreeMenu: true,
   enableSearch: false,
   nodeBinding: {
     field_0: "name",

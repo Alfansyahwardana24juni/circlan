@@ -36,109 +36,168 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
-
 	<style>
+	.header {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+	  }
+  
+	  .header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: white;
+		padding: 10px 10px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	  }
+  
+	  .logo img {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	  }
+  
+	  h1 {
+		font-size: 18px;
+		font-weight: bold;
+		color: #333;
+		margin: 0;
+	  }
+  
+	  .custom-button {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background-color: #f0f4ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border: none;
+    }
+    .custom-button .dots {
+      color: #e79e4a;
+      font-size: 14px;
+    }
+	/* content */
 		.event-card {
-			max-width: 950px;
-			border-radius: 15px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			overflow: hidden;
-			margin: 10px auto;
-			display: flex;
-			align-items: center;
-			background-color: #fff;
-			justify-content: space-between;
+			max-width: 390px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+			margin: 0px auto;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            justify-content: space-between;
 
-		}
-
-		.event-image {
-			overflow: hidden;
-			position: relative;
-		}
-
-		.event-image img {
-			width: 125px;
-			height: 125px;
-			object-fit: cover;
-		}
-
-		.event-date {
-			position: absolute;
-			top: 10px;
-			left: 10px;
-			background-color: #fff;
-			padding: 5px 10px;
-			border-radius: 5px;
-			font-size: 14px;
-			font-weight: bold;
-			color: #4a4a4a;
-		}
-
-		.event-details {
-			padding-left: 15px;
+        }
+        .event-image {
+            overflow: hidden;
+            position: relative;
+        }
+        .event-image img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .event-date {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #4a4a4a;
+        }
+        .event-details {
+            padding-left: 15px;		
 			margin-right: 15px;
-			flex-grow: 1;
+            flex-grow: 1;
+        }
+        .event-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .event-category {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid #4a4a4a;
+            border-radius: 15px;
+            font-size: 12px;
+            color: #4a4a4a;
+            margin-top: 5px;
+        }
+        .event-going {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .event-going img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: -10px;
+            border: 2px solid #fff;
+        }
+        .event-going span {
+            font-size: 14px;
+            color: #4a4a4a;
+            margin-left: 10px;
+        }
+        .event-location {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+        .event-location i {
+            margin-right: 5px;
+        }
+        .event-bookmark {
+            font-size: 18px;
+            color: #4a4a4a;
+	/* end content */
+        }
+		.material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+
+		.btn-purple {
+		background-color: #e79e4a;
+		/* warna ungu */
+		color: white;
+		text-decoration: none;
+		/* Menghapus garis bawah */
 		}
 
-		.event-title {
-			font-size: 18px;
-			font-weight: bold;
-			color: #333;
+		.btn-purple:hover {
+		background-color: #e79e4a;
+		/* warna ungu lebih terang */
 		}
 
-		.event-category {
-			display: inline-block;
-			padding: 5px 10px;
-			border: 1px solid #4a4a4a;
-			border-radius: 15px;
-			font-size: 12px;
-			color: #4a4a4a;
-			margin-top: 5px;
+		.btn-purple:focus {
+		outline: none;
+		/* Menghapus outline fokus default */
 		}
 
-		.event-going {
-			display: flex;
-			align-items: center;
-			margin-top: 10px;
+		.calendar-cell:hover {
+		background-color: #e5e7eb;
 		}
 
-		.event-going img {
-			width: 30px;
-			height: 30px;
-			border-radius: 50%;
-			margin-right: -10px;
-			border: 2px solid #fff;
+		.calendar-cell.active {
+		background-color: #e79e4a;
+		color: white;
 		}
-
-		.event-going span {
-			font-size: 12px;
-			color: #4a4a4a;
-			margin-left: 10px;
-		}
-
-		.event-location {
-			display: flex;
-			align-items: center;
-			margin-top: 10px;
-			font-size: 14px;
-			color: #4a4a4a;
-		}
-
-		.event-location i {
-			margin-right: 5px;
-		}
-
-		.event-bookmark {
-			font-size: 18px;
-			color: #4a4a4a;
-		}
-
-		.page-content inner {
-			padding: 0%;
-			margin: 0%;
-		}
-
-		
 	</style>
 
 </head>
@@ -199,115 +258,62 @@
 	<div class="page-content">
 		<div class="content-inner pt-0">
 			<div class="container">
-				<!-- story -->
-				<div class="author-notification">
-					<div class="swiper-btn-center-lr my-0">
-						<div class="swiper categorie-swiper">
-							<div class="swiper-wrapper">
-								<div class="event-card swiper-slide">
-									<div class="event-image rounded-start position-reight">
-										<img src="/assets/images/alain-gehri-BMxyU_Hkvs4-unsplash.jpg"
-											alt="DJ performing at a concert with a crowd in the background">
-										<div class="event-date">18 Dec</div>
-									</div>
-									<div class="event-details">
-										<div class="event-title">Wisuda</div>
-										<div class="event-going">
-											<button class="event-category">Hadir</button>
-											<img src="/assets/images/alain-gehri-BMxyU_Hkvs4-unsplash.jpg"
-												alt="Profile picture of a person going to the event">
-											<img src="/assets/images/alain-gehri-BMxyU_Hkvs4-unsplash.jpg"
-												alt="Profile picture of a person going to the event">
-											<img src="/assets/images/amy-flak-1aaVr2Va-Zo-unsplash.jpg"
-												alt="Profile picture of a person going to the event">
-											<span>20K+ Going</span>
-										</div>
-										<div class="event-location">
-											<i class="fas fa-map-marker-alt"></i>
-											<span>Sudiang, Makassar</span>
-										</div>
-									</div>
-
-								</div>
-								<div class="event-card swiper-slide">
-									<div class="event-image rounded-start position-reight">
-										<img src="/assets/images/amy-flak-1aaVr2Va-Zo-unsplash.jpg"
-											alt="DJ performing at a concert with a crowd in the background">
-										<div class="event-date">01 jan</div>
-									</div>
-									<div class="event-details">
-										<div class="event-title">Aqiqah</div>
-										<div class="event-going">
-											<button class="event-category">Hadir</button>
-											<img src="/assets/images/4669575.jpg"
-												alt="Profile picture of a person going to the event">
-											<img src="/assets/images/alain-gehri-BMxyU_Hkvs4-unsplash.jpg"
-												alt="Profile picture of a person going to the event">
-											<img src="/assets/images/amy-flak-1aaVr2Va-Zo-unsplash.jpg"
-												alt="Profile picture of a person going to the event">
-											<span>20K+ Going</span>
-										</div>
-										<div class="event-location">
-											<i class="fas fa-map-marker-alt"></i>
-											<span>LA Avenue, Indonesia</span>
-										</div>
-									</div>
-
-								</div>
-								<div class="event-card swiper-slide">
-									<div class="event-image rounded-start position-reight">
-										<img src="/assets/images/alain-gehri-BMxyU_Hkvs4-unsplash.jpg"
-											alt="DJ performing at a concert with a crowd in the background">
-										<div class="event-date">01 jan</div>
-									</div>
-									<div class="event-details">
-										<div class="event-title">Wisuda</div>
-										<div class="event-going">
-											<button class="event-category">Hadir</button>
-											<img src="/assets/images/4669575.jpg"
-												alt="Profile picture of a person going to the event">
-											<img src="/assets/images/alain-gehri-BMxyU_Hkvs4-unsplash.jpg"
-												alt="Profile picture of a person going to the event">
-											<img src="/assets/images/amy-flak-1aaVr2Va-Zo-unsplash.jpg"
-												alt="Profile picture of a person going to the event">
-											<span>2300 + Going</span>
-										</div>
-										<div class="event-location">
-											<i class="fas fa-map-marker-alt"></i>
-											<span>JL.dg, Sirua. Makassar</span>
-										</div>
-									</div>
-								</div>
-								<div class="event-card swiper-slide">
-									<div class="event-image rounded-start position-reight">
-										<img src="https://placehold.co/150x150"
-											alt="DJ performing at a concert with a crowd in the background">
-										<div class="event-date">01 jan</div>
-									</div>
-									<div class="event-details">
-										<div class="event-title">Seminar</div>
-										<div class="event-going">
-											<button class="event-category">Hadir</button>
-											<img src="/assets/images/amy-flak-1aaVr2Va-Zo-unsplash.jpg"
-												alt="Profile picture of a person going to the event">
-											<img src="/assets/images/4669575.jpg"
-												alt="Profile picture of a person going to the event">
-											<img src="/assets/images/alain-gehri-BMxyU_Hkvs4-unsplash.jpg"
-												alt="Profile picture of a person going to the event">
-											<span>20K+ Going</span>
-										</div>
-										<div class="event-location">
-											<i class="fas fa-map-marker-alt"></i>
-											<span>LA Avenue, Indonesia</span>
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
+				<div class="left">
+				  <div class="calendar">
+					<div class="month">
+					  <i class="fas fa-angle-left prev"></i>
+					  <div class="date">december 2015</div>
+					  <i class="fas fa-angle-right next"></i>
 					</div>
+					<div class="weekdays">
+					  <div>Sun</div>
+					  <div>Mon</div>
+					  <div>Tue</div>
+					  <div>Wed</div>
+					  <div>Thu</div>
+					  <div>Fri</div>
+					  <div>Sat</div>
+					</div>
+					<div class="days"></div>
+					<div class="goto-today">
+					  <div class="goto">
+						<input type="text" placeholder="mm/yyyy" class="date-input" />
+						<button class="goto-btn">Go</button>
+					  </div>
+					  <button class="today-btn">Today</button>
+					</div>
+				  </div>
 				</div>
-
+				<div class="right">
+				  <div class="today-date">
+					<div class="event-day">wed</div>
+					<div class="event-date">12th december 2022</div>
+				  </div>
+				  <div class="events"></div>
+				  <div class="add-event-wrapper">
+					<div class="add-event-header">
+					  <div class="title">Add Event</div>
+					  <i class="fas fa-times close"></i>
+					</div>
+					<div class="add-event-body">
+					  <div class="add-event-input">
+						<input type="text" placeholder="Event Name" class="event-name" />
+					  </div>
+					  <div class="add-event-input">
+						<input type="text" placeholder="Event Time From" class="event-time-from" />
+					  </div>
+					  <div class="add-event-input">
+						<input type="text" placeholder="Event Time To" class="event-time-to" />
+					  </div>
+					</div>
+					<div class="add-event-footer">
+					  <button class="add-event-btn">Add Event</button>
+					</div>
+				  </div>
+				</div>
+				<button class="add-event">
+				  <i class="fas fa-plus"></i>
+				</button>
 			</div>
 		</div>
 	</div>
