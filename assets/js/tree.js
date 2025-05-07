@@ -4,6 +4,7 @@
 //   '<text class="field_2" style="font-size: 14px;" fill="#ffffff" x="33" y="42" text-anchor="middle">{val}</text>';
 
 var family = new FamilyTree(document.getElementById("tree"), {
+  template: "john",
   showXScroll: FamilyTree.scroll.visible,
   showYScroll: FamilyTree.scroll.visible,
   mouseScrool: FamilyTree.action.zoom,
@@ -12,13 +13,67 @@ var family = new FamilyTree(document.getElementById("tree"), {
     fit: true,
   },
   nodeTreeMenu: true,
-  enableSearch: false,
+  enableSearch: true,
   nodeBinding: {
     field_0: "name",
     field_1: "birthDate",
-    field_2: "status",
+    field_2: "country",
+    field_3: "city",
     img_0: "photo",
   },
+  editForm: {
+    titleBinding: "name",
+    photoBinding: "photo",
+    generateElementsFromFields: true,
+    addMore: "Add more elements",
+    addMoreBtn: "Add element",
+    addMoreFieldName: "Element name",
+    elements: [
+      { type: "textbox", label: "Nama Lengkap", binding: "name" },
+      [
+        { type: "date", label: "Tanggal Lahir", binding: "birthDate" },
+      ],
+      [
+        {
+          type: "select",
+          options: [
+            { value: "id", text: "Indonesia" },
+          ],
+          label: "Negara",
+          binding: "country",
+        },
+        { type: "textbox", label: "Kota", binding: "city" },
+      ],
+      { type: "textbox", label: "Foto Profil", binding: "photo", btn: "Upload" },
+      { type: "textbox", label: "Nomor Telepon", binding: "Mobile" },
+    ],
+    buttons: {
+      edit: {
+        icon: FamilyTree.icon.edit(24, 24, "#fff"),
+        text: "Edit",
+        hideIfEditMode: true,
+        hideIfDetailsMode: false,
+      },
+      share: {
+        icon: FamilyTree.icon.share(24, 24, "#fff"),
+        text: "Share",
+      },
+      pdf: {
+        icon: FamilyTree.icon.pdf(24, 24, "#fff"),
+        text: "Save as PDF",
+      },
+      remove: null,
+    },
+  },
+});
+
+
+family.editUI.on("element-btn-click", function (sender, args) {
+  FamilyTree.fileUploadDialog(function (file) {
+    var formData = new FormData();
+    formData.append("file", file);
+    alert("upload the file");
+  });
 });
 
 family.load([
@@ -32,7 +87,7 @@ family.load([
     birthDate: "10 Maret 1950",
     photo:
       "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
-    status: "Jakarta",
+    city: "Jakarta",
   },
   {
     id: 1,
@@ -44,7 +99,7 @@ family.load([
     birthDate: "12 Desember 1951",
     photo:
       "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
-    status: "Malang",
+    city: "Malang",
   },
   {
     id: 2,
@@ -56,12 +111,12 @@ family.load([
     birthDate: "10 Maret 1950",
     photo:
       "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
-    status: "Makassar",
+    city: "Makassar",
   },
   {
     id: 3,
     gender: "female",
-    name: "Suahrtiningsih",
+    name: "Suhartiningsih",
     fid: 23,
     mid: 24,
     pids: [2],
@@ -134,7 +189,7 @@ family.load([
     birthDate: "10 Maret 1950",
     photo:
       "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
-    status: "Saya",
+    city: "Saya",
   },
   {
     id: 14,
