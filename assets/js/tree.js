@@ -13,7 +13,7 @@ var family = new FamilyTree(document.getElementById("tree"), {
     fit: true,
   },
   nodeTreeMenu: true,
-  enableSearch: true,
+  enableSearch: false,
   nodeBinding: {
     field_0: "name",
     field_1: "birthDate",
@@ -132,8 +132,7 @@ family.load([
     mid: 2,
     pids: [18],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/sarty.jpg",
   },
   {
     id: 18,
@@ -143,8 +142,7 @@ family.load([
     mid: null,
     pids: [6],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/hasanuddin.jpg",
   },
   {
     id: 7,
@@ -165,8 +163,7 @@ family.load([
     mid: 2,
     pids: [5],
     birthDate: "18 Maret 1985",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/sukmawaty.jpg",
   },
   {
     id: 12,
@@ -187,8 +184,7 @@ family.load([
     mid: 4,
     pids: [null],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/fakhri.jpg",
     city: "Saya",
   },
   {
@@ -199,8 +195,7 @@ family.load([
     mid: 4,
     pids: [null],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/rizkyadnan.jpg",
   },
   {
     id: 15,
@@ -221,8 +216,7 @@ family.load([
     mid: 12,
     pids: [null],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/zaidan.jpg",
   },
   {
     id: 17,
@@ -232,8 +226,7 @@ family.load([
     mid: 12,
     pids: [null],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/zia.jpg",
   },
   {
     id: 19,
@@ -342,8 +335,7 @@ family.load([
     mid: 22,
     pids: [31],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/bety.jpg",
   },
   {
     id: 29,
@@ -353,8 +345,7 @@ family.load([
     mid: 22,
     pids: [32],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/syamsu.jpg",
   },
   {
     id: 30,
@@ -364,8 +355,7 @@ family.load([
     mid: 22,
     pids: [36],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/adi.jpg",
   },
   {
     id: 5,
@@ -375,8 +365,7 @@ family.load([
     mid: 22,
     pids: [4],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/nuradnan.jpg",
   },
   {
     id: 31,
@@ -386,8 +375,7 @@ family.load([
     mid: null,
     pids: [28],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/wahyu.jpg",
   },
   {
     id: 32,
@@ -408,19 +396,17 @@ family.load([
     mid: 32,
     pids: [],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/fauzan.jpg",
   },
   {
     id: 34,
     gender: "female",
-    name: "Fika",
+    name: "Rafika",
     fid: 29,
     mid: 32,
     pids: [],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/rafika.jpg",
   },
   {
     id: 35,
@@ -430,8 +416,7 @@ family.load([
     mid: 32,
     pids: [],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/fauzi.jpg",
   },
   {
     id: 36,
@@ -441,8 +426,7 @@ family.load([
     mid: null,
     pids: [30],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/caya.jpg",
   },
   {
     id: 37,
@@ -452,7 +436,6 @@ family.load([
     mid: 36,
     pids: [],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/tiwi.jpg",
   },
 ]);
