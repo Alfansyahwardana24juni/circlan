@@ -85,8 +85,7 @@ family.load([
     mid: null,
     pids: [1],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/rumahlama.png",
     city: "Jakarta",
   },
   {
@@ -97,8 +96,7 @@ family.load([
     mid: null,
     pids: [0],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/djohari.png",
     city: "Malang",
   },
   {
@@ -109,8 +107,7 @@ family.load([
     mid: 1,
     pids: [3],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/achmad.jpeg",
     city: "Makassar",
   },
   {
@@ -121,8 +118,7 @@ family.load([
     mid: 24,
     pids: [2],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/suhartiningsih.jpeg",
   },
   {
     id: 6,
@@ -152,8 +148,7 @@ family.load([
     mid: 2,
     pids: [27],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/lely.jpg",
   },
   {
     id: 4,
@@ -173,8 +168,7 @@ family.load([
     mid: 2,
     pids: [15],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/yanti.jpg",
   },
   {
     id: 13,
@@ -205,8 +199,7 @@ family.load([
     mid: null,
     pids: [12],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/taufik.jpeg",
   },
   {
     id: 16,
@@ -236,8 +229,7 @@ family.load([
     mid: null,
     pids: [20],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/hasan.jpeg",
   },
   {
     id: 20,
@@ -247,8 +239,7 @@ family.load([
     mid: null,
     pids: [19],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/saipa.jpeg",
   },
   {
     id: 21,
@@ -258,8 +249,7 @@ family.load([
     mid: 20,
     pids: [22],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/abdul.jpeg",
   },
   {
     id: 22,
@@ -269,8 +259,7 @@ family.load([
     mid: 26,
     pids: [21],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/hamsina.jpeg",
   },
   {
     id: 23,
@@ -280,8 +269,7 @@ family.load([
     mid: null,
     pids: [24],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/fadoli.jpeg",
   },
   {
     id: 24,
@@ -291,8 +279,7 @@ family.load([
     mid: null,
     pids: [23],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/mariana.jpeg",
   },
   {
     id: 25,
@@ -302,8 +289,7 @@ family.load([
     mid: null,
     pids: [26],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/bora.jpeg",
   },
   {
     id: 26,
@@ -313,8 +299,7 @@ family.load([
     mid: null,
     pids: [25],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/zaenab.jpeg",
   },
   {
     id: 27,
@@ -324,8 +309,7 @@ family.load([
     mid: null,
     pids: [7],
     birthDate: "10 Maret 1950",
-    photo:
-      "https://i.pinimg.com/736x/58/a3/fa/58a3fa65f253cb12244a2e51d4e74cbf.jpg",
+    photo: "../assets/images/yadi.jpg",
   },
   {
     id: 28,
@@ -385,8 +369,7 @@ family.load([
     mid: null,
     pids: [29],
     birthDate: "12 Desember 1951",
-    photo:
-      "https://i.pinimg.com/736x/42/a7/e4/42a7e4a91672121998a35dc79a53ecfc.jpg",
+    photo: "../assets/images/taty.jpg",
   },
   {
     id: 33,
