@@ -477,7 +477,7 @@ body {
 
 /* media queries */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 4000px) {
   .container {
     min-height: 1vh;
     flex-direction: column;
