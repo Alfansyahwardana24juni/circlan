@@ -96,7 +96,7 @@ family.load([
     mid: null,
     pids: [0],
     birthDate: "12 Desember 1951",
-    photo: "../assets/images/djohari.png",
+    photo: "../assets/images/Djohari.png",
     city: "Malang",
   },
   {
@@ -148,7 +148,7 @@ family.load([
     mid: 2,
     pids: [27],
     birthDate: "12 Desember 1951",
-    photo: "../assets/images/lely.jpg",
+    photo: "../assets/images/Lely.jpg",
   },
   {
     id: 4,
